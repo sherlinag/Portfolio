@@ -441,6 +441,7 @@ const project = {
     <!-- Testimonial Section -->
 
     <section id="testimonials"class="testimonials">
+      <div class="container">
       <h2 class="section-title">TESTIMONIALS</h2>
       <div class="testimonial-slider">
           <div class="testimonial-container">
@@ -492,6 +493,7 @@ const project = {
           </div>
           <div class="dots"></div> 
       </div>
+    </div>
   </section>
 
   <!-- contact section -->
@@ -599,6 +601,7 @@ const slides = document.querySelectorAll(".testimonial");
 const dotsContainer = document.querySelector(".dots");
 let slidesToShow = window.innerWidth > 768 ? 3 : 1;
 let totalDots = slides.length - (slidesToShow - 1);
+let autoSlideInterval;
 
 // Function to create dots dynamically
 function createDots() {
@@ -608,7 +611,10 @@ function createDots() {
     for (let i = 0; i < totalDots; i++) {
         let dot = document.createElement("span");
         dot.classList.add("dot");
-        dot.onclick = () => currentSlide(i);
+        dot.onclick = () => {
+            currentSlide(i);
+            resetAutoSlide(); // Restart auto-slide timer
+        };
         dotsContainer.appendChild(dot);
     }
 }
@@ -639,6 +645,12 @@ function autoSlide() {
     showSlides(slideIndex);
 }
 
+// Restart auto-slide after manual interaction
+function resetAutoSlide() {
+    clearInterval(autoSlideInterval);
+    autoSlideInterval = setInterval(autoSlide, 8000);
+}
+
 // Update layout when screen resizes
 window.addEventListener("resize", () => {
     slidesToShow = window.innerWidth > 768 ? 3 : 1;
@@ -649,7 +661,8 @@ window.addEventListener("resize", () => {
 // Initialize
 createDots();
 showSlides(slideIndex);
-setInterval(autoSlide, 4000);
+resetAutoSlide(); // Start auto-slide
+
 
 
 

@@ -786,8 +786,8 @@ body {
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
     border-radius: 10px;
-    width: 350px;
-    height: 350px; /* Fixed height for all cards */
+    width: 415px;
+    height: 315px; /* Fixed height for all cards */
     text-align: left;
     flex: 0 0 auto;
     display: none;
@@ -854,6 +854,11 @@ body {
     .testimonial-container {
         flex-direction: column;
         align-items: center;
+        
+    }
+    .testimonial{
+        height: 350px;
+        width: 550px;
     }
 }
 
@@ -866,7 +871,7 @@ body {
         align-items: center;
     }
     .testimonial {
-        width: 90%;
+        width: 100%;
     }
     .arrow-list{
         justify-content: center;
@@ -985,7 +990,7 @@ body {
 .highlight, .dev-title {
     font-weight: bold;
     color: #ff5733; /* Adjust color */
-    border-right: 2px solid black; /* Typing cursor */
+    
     white-space: nowrap;
    
     display: inline-block;
@@ -1001,9 +1006,9 @@ body {
 .highlight::after, .dev-title::after {
     content: "";
     display: inline-block;
-    width: 2px;
+    
     height: 1em;
-    background: black;
+    
     animation: blink 0.8s infinite;
 }
 
@@ -1016,12 +1021,10 @@ body {
 
     .highlight, .dev-title {
         font-size: 2.0rem; /* Adjust text size for mobile */
-        border-right: 1.5px solid black; /* Reduce cursor size */
+        
     }
 
-    .highlight::after, .dev-title::after {
-        width: 1.5px; /* Adjust cursor width for smaller screens */
-    }
+    
     .hero h2{
         font-size: 2.0rem;
 
