@@ -183,10 +183,10 @@ body {
 }
 
 /* Profile Image */
-.profile-img img {
+/* .profile-img img {
     width: 70%;
     border-radius: 10px;
-}
+} */
 
 /* Side Button */
 .side-button {
@@ -1029,8 +1029,43 @@ body {
         font-size: 2.0rem;
 
     }
+    .hero{
+        padding: 80px 10px;
+    }
+    
+    .about-section{
+        padding: 20px 40px;
+    }
+    .animat{
+        max-width: 300px;
+        max-height: 200px;
+    }
+    .skills-section{
+        padding: 10px 0px;
+    }
+    .education-section{
+        padding: 10px 0px;
+    }
+    .animate{
+        max-width: 300px;
+        max-height: 200px;
+    }
 }
 
 .fab{
     font-size: xx-large;
   }
+
+  .profile-img img {
+    width: 70%;
+    border-radius: 50%; /* Makes it rounded */
+    display: block;
+    margin: 0 auto;
+}
+
+.signature {
+    font-family: "Rightman Signature", sans-serif; /* Signature-style font */
+    font-size: 44px;
+    margin-top: 10px;
+    text-align: center;
+}
