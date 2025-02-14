@@ -22,6 +22,9 @@ body {
     font-weight: bold;
     font-size: 22px;
 }
+.navbar-brand:hover{
+    color: #ff79c6;
+} 
 
 .navbar-nav .nav-link {
     color: white;
@@ -57,8 +60,8 @@ body {
 
 @media (max-width: 991px) {
     .navbar-collapse {
-        text-align: right;
-        margin-right: 10px;
+        text-align: center;
+        font-size: 1.2rem;
     }
 
     .navbar-nav {
@@ -204,7 +207,7 @@ body {
 }
 
 .experience-section {
-    padding: 60px 0;
+    padding: 90px 0;
     text-align: center;
 }
 
@@ -264,7 +267,7 @@ body {
 }
 
 .skills-section {
-    padding: 60px 0;
+    padding: 90px 0;
     text-align: center;
 }
 
@@ -291,6 +294,7 @@ body {
     transition: 0.3s ease-in-out;
     border: 1px solid rgba(255, 255, 255, 0.2);
     margin-bottom: 20px;
+    margin-top: 60px;
 }
 
 .skill-card img {
@@ -381,7 +385,7 @@ body {
 
 
 .education-section {
-    padding: 60px 0;
+    padding: 120px 0;
     text-align: center;
 }
 
@@ -537,6 +541,12 @@ body {
         width: 90%;
         margin: 10px auto;
     }
+    .education-section {
+        padding: 60px 0;
+    }
+    .skill-card {
+        margin-top: 0px;
+    }
 }
 
 .footer {
@@ -545,7 +555,7 @@ body {
     /* background: linear-gradient(45deg, rgb(200, 80, 192), rgb(65, 88, 208)); */
 }
 
-.highlight {
+.highlights {
     color: #4caf50;
     font-weight: bold;
 }
@@ -767,7 +777,7 @@ body {
 
 .testimonials {
     text-align: center;
-    padding: 50px 20px;
+    padding: 90px 30px;
     color: white;
 }
 
@@ -776,6 +786,7 @@ body {
 }
 
 .testimonial-container {
+    padding-top: 100px;
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -855,10 +866,19 @@ body {
         flex-direction: column;
         align-items: center;
         
+        padding-top: 0px!important;
+        
     }
     .testimonial{
         height: 350px;
         width: 550px;
+    }
+    .testimonials {
+       
+        padding: 40px 20px;
+    }
+    .experience-section {
+        padding: 60px 0;
     }
 }
 
@@ -884,6 +904,7 @@ body {
     font-size: 30px;
     color: #ff79c6;
     transition: 0.3s;
+   
 }
 
 .arrow-list {
@@ -920,6 +941,7 @@ body {
     justify-content: center;
     align-items: center;
     border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 100px;
 }
 
 .service-card:hover {
@@ -942,6 +964,7 @@ body {
 
 .services{
     text-align: center;
+    padding: 60px 0;
 }
 
 
@@ -977,6 +1000,9 @@ body {
         width: 40px;
         height: 3px;
     }
+    .service-card{
+        margin-top: 0px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -984,6 +1010,9 @@ body {
         width: 100%!important;
         height: 100%!important;
         margin-top: 50px!important;
+    }
+    .services{
+        padding: 20px 0;
     }
 }
 
@@ -1041,7 +1070,7 @@ body {
         max-height: 200px;
     }
     .skills-section{
-        padding: 10px 0px;
+        padding: 10px 0px!important;
     }
     .education-section{
         padding: 10px 0px;
@@ -1049,6 +1078,9 @@ body {
     .animate{
         max-width: 300px;
         max-height: 200px;
+    }
+    .skills-section {
+        padding: 60px 0;
     }
 }
 
@@ -1069,3 +1101,4 @@ body {
     margin-top: 10px;
     text-align: center;
 }
+

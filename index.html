@@ -36,6 +36,9 @@
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -44,15 +47,16 @@
             <li class="nav-item"><a class="nav-link" href="#about-section">About</a></li>
             <li class="nav-item"><a class="nav-link" href="#experience-section">Experience</a></li>
             <li class="nav-item"><a class="nav-link" href="#skills-section">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
             <li class="nav-item"><a class="nav-link" href="#education-section">Education</a></li>
+            
+            
             <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonial</a></li>
-            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li> 
             <li class="nav-item"><a class="nav-link" href="#contact-section">Contact</a></li>
           </ul>
         </div>
       </div>
     </nav>
-
     <!-- Hero Section -->
     <section class="hero">
       <div class="container">
@@ -117,6 +121,7 @@
           <!-- Projects, Experience & Certifications -->
           <div class="about-stats">
             <div class="stat-box">
+              
               <i class="fa-solid fa-laptop-code expicons"></i>
               <h3>5</h3>
               <p>Projects</p>
@@ -151,7 +156,7 @@
      
     </section>
 
-    <section id="experience-section" class="experience-section py-5">
+    <section id="experience-section" class="experience-section">
       <div class="container">
         <h2 class="section-title">Experiences</h2>
 
@@ -201,6 +206,52 @@
       <div class="container">
           <h2 class="section-title">Skills</h2>
           <div class="row justify-content-center">
+
+            <!-- HTML -->
+            <div class="col-md-2 col-6">
+              <div class="skill-card">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                  <p>HTML</p>
+              </div>
+          </div>
+
+          <!-- CSS -->
+          <div class="col-md-2 col-6">
+            <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+                <p>CSS</p>
+            </div>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="col-md-2 col-6">
+          <div class="skill-card">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+              <p>JavaScript</p>
+          </div>
+      </div>
+
+      <div class="col-md-2 col-6">
+        <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="bootstrap">
+            <p>Bootstrap</p>
+        </div>
+    </div>
+
+    <!-- Tailwind CSS -->
+    <div class="col-md-2 col-6">
+      <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind">
+          <p>Tailwind</p>
+      </div>
+  </div>
+   <!-- java-->
+   <div class="col-md-2 col-6">
+    <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="java">
+        <p>JAVA</p>
+    </div>
+</div>
               <!-- React -->
               <div class="col-md-2 col-6">
                   <div class="skill-card">
@@ -212,18 +263,12 @@
               <!-- Next.js -->
               <div class="col-md-2 col-6">
                   <div class="skill-card">
-                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js">
-                      <p>Next.js</p>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+                      <p>Node.js</p>
                   </div>
               </div>
   
-              <!-- Tailwind CSS -->
-              <div class="col-md-2 col-6">
-                  <div class="skill-card">
-                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind">
-                      <p>Tailwind</p>
-                  </div>
-              </div>
+              
   
               <!-- MongoDB -->
               <div class="col-md-2 col-6">
@@ -249,37 +294,20 @@
                   </div>
               </div>
   
-              <!-- JavaScript -->
-              <div class="col-md-2 col-6">
-                  <div class="skill-card">
-                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
-                      <p>JavaScript</p>
-                  </div>
-              </div>
+              
   
-              <!-- HTML -->
-              <div class="col-md-2 col-6">
-                  <div class="skill-card">
-                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
-                      <p>HTML</p>
-                  </div>
-              </div>
+              
   
-              <!-- CSS -->
-              <div class="col-md-2 col-6">
-                  <div class="skill-card">
-                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
-                      <p>CSS</p>
-                  </div>
-              </div>
+              
   
-              <!-- GitHub -->
-              <div class="col-md-2 col-6">
-                  <div class="skill-card">
-                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
-                      <p>GitHub</p>
-                  </div>
+             
+            
+            <div class="col-md-2 col-6">
+              <div class="skill-card">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" alt="gitlab">
+                  <p>Gitlab</p>
               </div>
+          </div>
           </div>
       </div>
   </section>
@@ -343,16 +371,16 @@ const project = {
 
     <section id="services"class="services">
       <div class="container my-5">
-        <h2 class="section-title">Our Services</h2>
+        <h2 class="section-title">Services</h2>
         <div class="row g-4 justify-content-center">
             
             <!-- Mobile App Development -->
-            <div class="col-6 col-md-3">
+            <!-- <div class="col-6 col-md-3">
                 <div class="service-card d-flex flex-column align-items-center justify-content-center text-center">
                     <i class="fas fa-mobile-alt"></i>
                     <h5>Mobile App Development</h5>
                 </div>
-            </div>
+            </div> -->
     
             <!-- Web Development -->
             <div class="col-6 col-md-3">
@@ -365,18 +393,19 @@ const project = {
             <!-- UI/UX Design -->
             <div class="col-6 col-md-3">
                 <div class="service-card d-flex flex-column align-items-center justify-content-center text-center">
-                    <i class="fas fa-paint-brush"></i>
-                    <h5>UI/UX Design</h5>
+                  <i class="fas fa-search"></i>
+                  <h5>Search Engine Optimization</h5>
+                  
                 </div>
             </div>
     
             <!-- Video Editing -->
-            <div class="col-6 col-md-3">
+            <!-- <div class="col-6 col-md-3">
                 <div class="service-card d-flex flex-column align-items-center justify-content-center text-center">
                     <i class="fas fa-video"></i>
                     <h5>Video Editing</h5>
                 </div>
-            </div>
+            </div> -->
     
             <!-- Logo Design -->
             <div class="col-6 col-md-3">
@@ -398,7 +427,7 @@ const project = {
     </div>
     </section>
 
-    <section id="education-section"class="education-section py-5">
+    <section id="education-section"class="education-section">
       <div class="container">
         <h2 class="section-title">Education</h2>
 
@@ -451,32 +480,32 @@ const project = {
                 
                   <p><i>"I had the pleasure of working with Thaufiq on a personal project. He possesses a strong team-playing spirit, sincere commitment, and a keen interest in learning."</i></p>
                   <div class="testimonial-footer">
-                      <img src="/imgs/profilepic.jpg" alt="Sreenidhi S">
-                      <h3>Sreenidhi S</h3>
-                      <p>GIS Developer</p>
+                      <img src="/imgs/profilepic.jpg" alt="Arunkumar A">
+                      <h3>Arunkumar A</h3>
+                      <p>Java Developer</p>
                   </div>
               </div>
               <div class="testimonial">
                  
-                  <p><i>"Ahmed is a dynamic force of positivity. His passion for technology is inspiring, making him an invaluable team member."</i></p>
+                  <p><i>"Sherlin is a dynamic force of positivity. His passion for technology is inspiring, making him an invaluable team member."</i></p>
                   <div class="testimonial-footer">
-                      <img src="/imgs/profilepic.jpg" alt="Syed Usman">
-                      <h3>Syed Usman</h3>
+                      <img src="/imgs/profilepic.jpg" alt="Sree Venkatesh">
+                      <h3>Sree Venkatesh</h3>
                       <p>React Developer</p>
                   </div>
               </div>
               <div class="testimonial">
                   
-                  <p><i>"Ahmed not just a friend but also an exceptional partner in our academic endeavors. His dedication made him stand out among peers."</i></p>
+                  <p><i>"Sherlin not just a friend but also an exceptional partner in our academic endeavors. His dedication made him stand out among peers."</i></p>
                   <div class="testimonial-footer">
                       <img src="/imgs/profilepic.jpg" alt="Perumal P">
-                      <h3>Perumal P</h3>
+                      <h3></h3>
                       <p>Process Executive</p>
                   </div>
               </div>
               <div class="testimonial">
                   
-                  <p><i>"Working with Ahmed was an excellent experience. His expertise in problem-solving and collaboration is commendable."</i></p>
+                  <p><i>"Working with Sherlin was an excellent experience. His expertise in problem-solving and collaboration is commendable."</i></p>
                   <div class="testimonial-footer">
                       <img src="/imgs/profilepic.jpg" alt="John Doe">
                       <h3>John Doe</h3>
@@ -485,11 +514,11 @@ const project = {
               </div>
               <div class="testimonial">
                  
-                  <p><i>"Ahmed's leadership and dedication are unparalleled. His ability to adapt and drive projects to success is inspiring."</i></p>
+                  <p><i>"Sherlin's leadership and dedication are unparalleled. His ability to adapt and drive projects to success is inspiring."</i></p>
                   <div class="testimonial-footer">
-                      <img src="/imgs/profilepic.jpg" alt="Jane Smith">
-                      <h3>Jane Smith</h3>
-                      <p>Project Manager</p>
+                      <img src="/imgs/profilepic.jpg" alt="sherjin">
+                      <h3>Sherjin A G</h3>
+                      <p>Junior Python Developer</p>
                   </div>
               </div>
           </div>
@@ -585,7 +614,7 @@ const project = {
     <!-- Footer -->
     <footer class="footer text-center text-light">
       <p class="footer-para">
-        © Developer Portfolio by <span class="highlight">Sherlin A G</span>
+        © Developer Portfolio by <span class="highlights">Sherlin A G</span>
       </p>
     </footer>
     <a href="https://wa.me/your-number" target="_blank" class="whatsapp-icon">
@@ -650,7 +679,7 @@ function autoSlide() {
 // Restart auto-slide after manual interaction
 function resetAutoSlide() {
     clearInterval(autoSlideInterval);
-    autoSlideInterval = setInterval(autoSlide, 8000);
+    autoSlideInterval = setInterval(autoSlide, 5000);
 }
 
 // Update layout when screen resizes
@@ -691,6 +720,18 @@ function typeEffect(element, text, speed, callback) {
     };
 
 
+    document.addEventListener("DOMContentLoaded", function () {
+    var navLinks = document.querySelectorAll(".nav-link");
+    var navbarCollapse = document.querySelector(".navbar-collapse");
+
+    navLinks.forEach(function (link) {
+      link.addEventListener("click", function () {
+        var bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+          toggle: true,
+        });
+      });
+    });
+  });
 
     
     </script>
