@@ -809,7 +809,7 @@ body {
 
 .testimonial-content {
     flex-grow: 1;
-    min-height: 180px;
+    min-height: 190px;
     overflow: hidden;
 }
 
@@ -819,17 +819,17 @@ body {
     align-items: center;
     text-align: center;
     position: absolute;
-    bottom: 20px;
+    bottom: 10px;
     left: 0;
     right: 0;
 }
 
 .testimonial-footer img {
-    width: 60px;
-    height: 60px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     margin-bottom: 10px;
-    border: 3px solid #ffcc00;
+    border: 3px solid #6df0c2;
 }
 
 /* Dots */
@@ -1082,6 +1082,11 @@ body {
     .skills-section {
         padding: 60px 0;
     }
+    .profile-img img {
+        width: 275px!important; /* Set a fixed width */
+        height: 290px !important; /* Ensure height equals width */
+        /* Ensures image fills the circular space */
+    }
 }
 
 .fab{
@@ -1089,16 +1094,24 @@ body {
   }
 
   .profile-img img {
-    width: 70%;
-    border-radius: 50%; /* Makes it rounded */
+    width: 475px; /* Set a fixed width */
+    height: 495px; /* Ensure height equals width */
+    border-radius: 50%; /* Makes it a perfect circle */
     display: block;
     margin: 0 auto;
+    object-fit: fill; 
+    margin-top: 30px;
+    border: 5px solid #ff79c6;/* Ensures image fills the circular space */
 }
+
 
 .signature {
     font-family: "Rightman Signature", sans-serif; /* Signature-style font */
     font-size: 44px;
-    margin-top: 10px;
+    margin-top: 0px;
     text-align: center;
-}
 
+}
+.fa-bars{
+    color: #fff;
+}
