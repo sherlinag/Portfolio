@@ -251,6 +251,7 @@ body {
 .date {
     color: #3cf94a;
     font-weight: bold;
+    
 }
 
 /* Job Position */
@@ -258,12 +259,14 @@ body {
     font-size: 20px;
     font-weight: bold;
     color: #ffffff;
+    margin-top: 8px;
 }
 
 /* Company Name */
 .company {
     font-size: 16px;
     color: #aaaaaa;
+    margin-bottom: 0px!important;
 }
 
 .skills-section {
@@ -385,7 +388,7 @@ body {
 
 
 .education-section {
-    padding: 120px 0;
+    padding: 80px 0;
     text-align: center;
 }
 
@@ -437,6 +440,7 @@ body {
 .institution {
     font-size: 14px;
     color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 8px!important;
 }
 
 /* Image */
@@ -1068,6 +1072,10 @@ body {
         
     }
 
+    .footer-para, .highlights{
+        font-size: 16px;
+    }
+
     
     .hero h2{
         font-size: 2.0rem;
@@ -1078,8 +1086,17 @@ body {
     }
     
     .about-section{
-        padding: 20px 40px;
+        padding: 20px 20px;
+    
     }
+    .about-text{
+        padding-left: 5px;
+    }
+    .arrow-list li {
+        padding-left: 15px;
+        padding-right: 10px;
+    }
+
     .animat{
         max-width: 300px;
         max-height: 200px;
@@ -1098,7 +1115,7 @@ body {
         padding: 60px 0;
     }
     .profile-img img {
-        width: 275px!important; /* Set a fixed width */
+        width: 280px!important; /* Set a fixed width */
         height: 290px !important; /* Ensure height equals width */
         /* Ensures image fills the circular space */
     }
@@ -1114,7 +1131,7 @@ body {
 
   .profile-img img {
     width: 475px; /* Set a fixed width */
-    height: 495px; /* Ensure height equals width */
+    height: 515px; /* Ensure height equals width */
     border-radius: 50%; /* Makes it a perfect circle */
     display: block;
     margin: 0 auto;
@@ -1156,5 +1173,31 @@ body {
     
     transition: transform 0.3s ease-in-out;
 }
+
+@media(max-width:480px){
+    .typing-container {
+        font-size: 1.5rem; /* Reduce font size */
+        text-align: center; /* Ensure center alignment */
+        padding: 10px;
+    }
+
+     .dev-title {
+        font-size: 1.8rem;
+        /* Adjust text size for mobile */
+        
+    }
+    .resume-btn {
+        margin-left: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .contact-btn {
+        padding-left: 15px;
+        padding-right: 15px;
+        
+    }
+
+}
+
 
 

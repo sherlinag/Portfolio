@@ -194,11 +194,11 @@
               <p class="company">Ordinal Technology Solutions Pvt. Ltd.</p>
             </div>
 
-            <!-- <div class="experience-card">
+            <div class="experience-card">
               <span class="date">(Dec 2023 - Present)</span>
-              <h3 class="position">FULLSTACK DEVELOPER</h3>
+              <h3 class="position">WEB DEVELOPER</h3>
               <p class="company">Freelancer</p>
-            </div> -->
+            </div>
 
             <div class="experience-card">
               <span class="date">(Mar 2023 - Dec 2023)</span>
@@ -206,11 +206,11 @@
               <p class="company">QSpiders - Training & Development.</p>
             </div>
 
-            <div class="experience-card">
+            <!-- <div class="experience-card">
               <span class="date">(Feb 2023 - Mar 2023)</span>
-              <h3 class="position">DATA ANALYST</h3>
+              <h3 class="position">DATA ANALYST WORKSHOP</h3>
               <p class="company">ICT Academy.</p>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -311,8 +311,8 @@
               <!-- Power BI -->
             <div class="col-md-2 col-6">
               <div class="skill-card">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" alt="Power BI" />
-                <p>Power BI</p>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" alt="Power BI" />
+                <p>Gitlab</p>
               </div>
           </div>
           </div>
@@ -406,12 +406,20 @@ const project = {
           </div>
 
           <!-- SEO -->
-          <div class="col-6 col-md-3">
+          <!-- <div class="col-6 col-md-3">
             <div class="service-card d-flex flex-column align-items-center justify-content-center text-center">
               <i class="fas fa-search"></i>
               <h5>SEO Optimization</h5> 
             </div>
-        </div>
+        </div> -->
+        <div class="col-6 col-md-3">
+          <div class="service-card d-flex flex-column align-items-center justify-content-center text-center">
+            <i class="fas fa-pen-nib"></i>
+
+              <h5>Logo Design</h5> 
+          </div>
+      </div>
+      
     
             <!-- Web Hosting -->
             <div class="col-6 col-md-3">
@@ -444,7 +452,7 @@ const project = {
           <div class="col-md-6">
             <!-- Education Card 1 -->
             <div class="education-card">
-              <div class="year">Feb 2025</div>
+              <!-- <div class="year">Feb 2025</div> -->
               <h3 class="degree">PAPERBOAT PHOTOGRAPHY WEBSITE</h3>
               <p class="institution">Technology Used: HTML, CSS ,Bootstrap, JS</p>
               <div class="internet"> <span class="pro">VIEW PROJECT <i class="fas fa-arrow-right"></i>
@@ -453,7 +461,7 @@ const project = {
 
             <!-- Education Card 2 -->
             <div class="education-card">
-              <div class="year">NOV 2024</div>
+              <!-- <div class="year">NOV 2024</div> -->
               <h3 class="degree">NEWS APP</h3>
               <p class="institution">Technology Used: React Native, News API,</p>
               <div class="internet"> <span class="pro">VIEW PROJECT <i class="fas fa-arrow-right"></i>
@@ -462,7 +470,7 @@ const project = {
 
             <!-- Education Card 3 -->
             <div class="education-card">
-              <div class="year">Mar 2023</div>
+              <!-- <div class="year">Mar 2023</div> -->
               <h3 class="degree">COVID-19 VIRUS DEDECTION</h3>
               <p class="institution">Technology Used: Nodejs, </p>
               <div class="internet"> <span class="pro">VIEW PROJECT <i class="fas fa-arrow-right"></i>
@@ -546,33 +554,41 @@ const project = {
             <div class="contact-form">
               <form action="https://formspree.io/f/mgvoneab" method="POST">
                 <div class="mb-3">
-                  <!-- <label class="text-light">Your Name :</label> -->
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Enter your name"
-                  />
+                    <input
+                        type="text"
+                        name="name"
+                        class="form-control"
+                        placeholder="Enter your name"
+                        required
+                    />
                 </div>
                 <div class="mb-3">
-                  <!-- <label class="text-light">Your Email :</label> -->
-                  <input
-                    type="email"
-                    class="form-control"
-                    placeholder="Enter your email"
-                  />
+                    <input
+                        type="email"
+                        name="email"
+                        class="form-control"
+                        placeholder="Enter your email"
+                        required
+                    />
                 </div>
                 <div class="mb-3">
-                  <!-- <label class="text-light">Your Message :</label> -->
-                  <textarea
-                    class="form-control"
-                    rows="4"
-                    placeholder="Enter your message"
-                  ></textarea>
+                    <textarea
+                        name="message"
+                        class="form-control"
+                        rows="4"
+                        placeholder="Enter your message"
+                        required
+                    ></textarea>
                 </div>
+                
+                <!-- Hidden field for spam protection -->
+                <input type="hidden" name="_subject" value="New Contact Form Submission">
+            
                 <button type="submit" class="btn btn-primary w-100">
-                  SEND MESSAGE <i class="fas fa-envelope"></i>
+                    SEND MESSAGE <i class="fas fa-envelope"></i>
                 </button>
-              </form>
+            </form>
+            
             </div>
           </div>
 
@@ -618,7 +634,7 @@ const project = {
     <!-- Footer -->
     <footer class="footer text-center text-light">
       <p class="footer-para">
-        © Developer Portfolio by <span class="highlights">Sherlin A G</span>
+        © Designed by <span class="highlights">Sherlin A G</span>
       </p>
     </footer>
     <a href="https://api.whatsapp.com/send/?phone=917094593345&text=Hello%20Sherlin,%20I%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect!" target="_blank" class="whatsapp-icon">
