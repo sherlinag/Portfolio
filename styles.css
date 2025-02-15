@@ -33,6 +33,7 @@ body {
     position: relative;
     display: inline-block;
     padding-bottom: 1px;
+    font-size: 20px;
 }
 
 
@@ -1036,8 +1037,7 @@ body {
 }
 
 .highlight, .dev-title {
-    font-weight: bold;
-    color: #ff5733; /* Adjust color */
+    font-weight: bold; /* Adjust color */
     
     white-space: nowrap;
    
@@ -1169,8 +1169,7 @@ body {
 }
 
 .custom-github-icon {
-    font-size: 24px;  
-    
+    font-size: 24px;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -1198,6 +1197,8 @@ body {
     }
 
 }
-
+.fa-graduation-cap{
+    color: #007bff;
+}
 
 
