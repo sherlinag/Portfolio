@@ -25,6 +25,9 @@ body {
 .navbar-brand:hover{
     color: #ff79c6;
 } 
+.navbar-brand:focus{
+    color: #6df0c2;
+}
 
 .navbar-nav .nav-link {
     color: white;
