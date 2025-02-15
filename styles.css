@@ -410,8 +410,13 @@ body {
     padding: 20px;
     margin-bottom: 20px;
     text-align: left;
+    transition: 0.3s ease-in-out;
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+.education-card:hover {
+    transform: translateY(-5px);
+    background: rgba(120, 50, 255, 0.3);
 }
 
 /* Year */
@@ -502,13 +507,14 @@ body {
 
 .contact-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 255, 0, 0.3);
+    box-shadow: 0 6px 12px rgba(120, 50, 255, 0.3);
 }
 
 .contact-card i {
     font-size: 30px;
     margin-bottom: 10px;
-    color: #4CAF50;
+    color:#007bff ;
+    
 }
 
 .contact-card h4 {
@@ -717,6 +723,7 @@ body {
     margin-bottom: 15px;
 }
 
+
 .stats-header i {
     font-size: 40px;
     color: #4CAF50; /* Green accent color */
@@ -728,6 +735,10 @@ body {
     margin-top: 20px;
 }
 
+.stat-box:hover{
+    background-color:rgba(120, 50, 255, 0.3)
+}
+
 .stat-box {
     background: rgba(255, 255, 255, 0.1);
     padding: 15px 20px;
@@ -736,6 +747,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     flex: 1;
     margin: 0 10px;
+    transition: 0.3s ease-in-out
 }
 
 .stat-box h3 {
@@ -748,6 +760,9 @@ body {
 .stat-box p {
     font-size: 16px;
     color: #ddd;
+}
+.stat-box i{
+    color:#007bff
 }
 
 /* Responsive Design */
@@ -1087,6 +1102,10 @@ body {
         height: 290px !important; /* Ensure height equals width */
         /* Ensures image fills the circular space */
     }
+    .institution{
+        line-height: 25px !important;
+        margin-bottom: 0px;
+    }
 }
 
 .fab{
@@ -1101,7 +1120,7 @@ body {
     margin: 0 auto;
     object-fit: fill; 
     margin-top: 30px;
-    border: 5px solid #ff79c6;/* Ensures image fills the circular space */
+    border: 5px solid #6df0c2;/* Ensures image fills the circular space */
 }
 
 
@@ -1115,3 +1134,27 @@ body {
 .fa-bars{
     color: #fff;
 }
+
+.fab:hover{
+    color:#ff79c6
+}
+
+.internet {
+    display: flex;
+    align-items: center; /* Align items in a row */
+    justify-content: flex-start; /* Align to the left */
+    gap: 10px; /* Add spacing between elements */
+}
+
+.pro {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.custom-github-icon {
+    font-size: 24px;  
+    
+    transition: transform 0.3s ease-in-out;
+}
+
+
