@@ -20,4 +20,5 @@ I am **Sherlin A G**, a passionate **Software Developer** with expertise in **Re
 ---
 
 ## 🎯 Live Demo  
-🔗 **Check out the live version:** [portfolio.com](#)  
+🔗 **Check out the live version:** [portfolio.com](https://sherlin-ag.netlify.app/)  
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6f39c98d-b0ab-4552-a4c5-9160aebc412d/deploy-status)](https://app.netlify.com/sites/sherlin-ag/deploys)
