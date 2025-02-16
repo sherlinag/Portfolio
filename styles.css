@@ -144,6 +144,7 @@ body {
 
 .resume-btn {
     background: #845ef7;
+    border: 2px solid #845ef7;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -153,7 +154,9 @@ body {
 }
 
 .resume-btn:hover {
-    background: #6f42c1;
+    color: #845ef7;
+    background: transparent;
+    border: 2px solid #845ef7;
 }
 
 /* Code Box */
@@ -188,12 +191,6 @@ body {
     color: #cccccc;
     line-height: 1.8;
 }
-
-/* Profile Image */
-/* .profile-img img {
-    width: 70%;
-    border-radius: 10px;
-} */
 
 /* Side Button */
 .side-button {
@@ -696,7 +693,7 @@ body {
     right: 30px;
     width: 40px;
     height: 40px;
-    background-color: #ff0090;
+    background-color: #2d39da;
     color: #ffffff;
     border: none;
     border-radius: 50%;
@@ -709,9 +706,11 @@ body {
     /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); */
     transition: opacity 0.3s ease, transform 0.3s ease;
   }
-  
+  #scrollToTopBtn:active {
+    background-color: #ff0090;
+  }
   #scrollToTopBtn:hover {
-    background-color: #2d39da;
+    background-color: #ff0090;
     transform: scale(1.1);
   }
   .fa-chevron-up{
@@ -722,7 +721,7 @@ body {
     margin: 0px;
   }
   .navbar-toggler{
-    background-color: #ff79c6;
+    background-color: #2d39da;
   }
 
 
@@ -1140,7 +1139,7 @@ body {
     margin: 0 auto;
     object-fit: fill; 
     margin-top: 30px;
-    border: 5px solid #6df0c2;/* Ensures image fills the circular space */
+    border: 5px solid #2d39da;/* Ensures image fills the circular space */
 }
 
 
