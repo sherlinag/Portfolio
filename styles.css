@@ -1118,8 +1118,8 @@ body {
         padding: 60px 0;
     }
     .profile-img img {
-        width: 280px!important; /* Set a fixed width */
-        height: 290px !important; /* Ensure height equals width */
+        width: 250px!important; /* Set a fixed width */
+        height: 280px !important; /* Ensure height equals width */
         /* Ensures image fills the circular space */
     }
     .institution{
@@ -1133,7 +1133,7 @@ body {
   }
 
   .profile-img img {
-    width: 475px; /* Set a fixed width */
+    width: 450px; /* Set a fixed width */
     height: 515px; /* Ensure height equals width */
     border-radius: 50%; /* Makes it a perfect circle */
     display: block;
