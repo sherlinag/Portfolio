@@ -687,7 +687,7 @@ body {
   }
 
   /* Scroll to top buttom */
-  #scrollToTopBtn {
+  /* #scrollToTopBtn {
     position: fixed;
     bottom: 30px;
     right: 30px;
@@ -699,11 +699,11 @@ body {
     border-radius: 50%;
     font-size: 24px;
     cursor: pointer;
-    display: none; /* Hidden by default */
+    display: none; 
     justify-content: center;
     align-items: center;
     z-index: 1000; 
-    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); */
+    
     transition: opacity 0.3s ease, transform 0.3s ease;
   }
   #scrollToTopBtn:active {
@@ -712,9 +712,41 @@ body {
   #scrollToTopBtn:hover {
     background-color: #ff0090;
     transform: scale(1.1);
+  } */
+  #scrollToTopBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color:rgb(255, 121, 198);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 1000;
+    transition: opacity 0.3s;
+  }
+  
+  #scrollToTopBtn svg {
+    position: absolute;
+    top: 10;
+    left: 5;
+  }
+  
+  #progress {
+    transform: rotate(-90deg);
+    transform-origin: center;
+    transition: stroke-dashoffset 0.3s;
   }
   .fa-chevron-up{
     font-size:smaller;
+    color: #fff;
   }
 
   .footer-para{
