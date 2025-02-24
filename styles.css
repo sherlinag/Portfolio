@@ -673,9 +673,18 @@ body {
     }
 }
   @media (max-width: 768px) {
-    .whatsapp-icon {
-      bottom: 20px;
-      left: 20px;
+    .whatsapp{
+      width: 45px;
+      height: 45px;
+      
+    }
+    .whatsapp-icon{
+        bottom: 20px;
+        left: 25px;
+    }
+    .whatsapp-icon:before {
+      width: 45px;
+      height: 45px;
     }
     #scrollToTopBtn {
       bottom: 20px !important;
