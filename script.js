@@ -79,6 +79,4 @@ document.addEventListener("DOMContentLoaded", function () {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 });
-const circleRadius = progressCircle.r.baseVal.value;
-const circumference = 2 * Math.PI * circleRadius;
-progressCircle.style.strokeDasharray = circumference;
+
