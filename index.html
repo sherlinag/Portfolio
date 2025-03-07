@@ -42,6 +42,7 @@
           aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          id="menu-toggle"
         >
           <span><i class="fa-solid fa-bars"></i></span>
         </button>
@@ -665,6 +666,30 @@ function typeEffect(element, text, speed, callback) {
       });
     });
   });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById("menu-toggle");
+    const icon = menuToggle.querySelector("i");
+
+    menuToggle.addEventListener("click", function () {
+        if (icon.classList.contains("fa-bars")) {
+            icon.classList.remove("fa-bars");
+            icon.classList.add("fa-times"); // Close icon
+        } else {
+            icon.classList.remove("fa-times");
+            icon.classList.add("fa-bars"); // Menu icon
+        }
+    });
+
+    // Close menu on outside click
+    document.addEventListener("click", function (event) {
+        const navbar = document.getElementById("navbarNav");
+        if (!menuToggle.contains(event.target) && !navbar.contains(event.target)) {
+            icon.classList.remove("fa-times");
+            icon.classList.add("fa-bars");
+        }
+    });
+});
 
     
     </script>
