@@ -8,8 +8,11 @@
     color: white !important; /* Forces white color */
     font-size: 1.8rem;
     transition: color 0.3s ease-in-out;
+    
   }
-  
+  .navbar-toggler{
+    border: 0px;
+  } 
 body {
     font-family: 'Poppins', sans-serif;
     background: #0a0c1b;
