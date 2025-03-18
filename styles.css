@@ -1252,6 +1252,9 @@ body {
 }
 .fa-graduation-cap{
     color: #007bff;
+    font-size: 20px;
 }
-
+.customcolor:hover{
+    color: #ff79c6;
+}
 
